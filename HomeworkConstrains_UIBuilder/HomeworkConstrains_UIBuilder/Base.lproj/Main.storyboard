@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FwS-40-dyn" userLabel="redView">
+                                <rect key="frame" x="16" y="20" width="568" height="173.5"/>
+                                <color key="backgroundColor" red="1" green="0.10335463860000001" blue="0.023115460819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="RedView"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-lO-tuF" userLabel="pinkView">
+                                <rect key="frame" x="16" y="213.5" width="176" height="173"/>
+                                <color key="backgroundColor" red="1" green="0.2191203343" blue="0.90377407679999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="RedView"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuM-yk-FQn" userLabel="yellowView" colorLabel="IBBuiltInLabel-Yellow">
+                                <rect key="frame" x="407.5" y="213.5" width="176.5" height="173.5"/>
+                                <color key="backgroundColor" red="1" green="0.98894167129999999" blue="0.26166003459999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="RedView"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNA-91-8gm" userLabel="orangeView">
+                                <rect key="frame" x="16" y="406.5" width="274.5" height="173.5"/>
+                                <color key="backgroundColor" red="1" green="0.49241436570000002" blue="0.111307737" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="RedView"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-Wr-06o" userLabel="greenView">
+                                <rect key="frame" x="310.5" y="407.5" width="273.5" height="173"/>
+                                <color key="backgroundColor" red="0.3638237809" green="1" blue="0.47623289889999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="RedView"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSS-w6-eNJ" userLabel="blueView">
+                                <rect key="frame" x="212" y="213.5" width="175.5" height="173"/>
+                                <color key="backgroundColor" red="0.25904683070000001" green="0.21008456519999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="RedView"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NNA-91-8gm" firstAttribute="height" secondItem="Oe0-lO-tuF" secondAttribute="height" id="2Gh-Kb-ZN2"/>
+                            <constraint firstItem="oSS-w6-eNJ" firstAttribute="top" secondItem="FwS-40-dyn" secondAttribute="bottom" constant="20" id="6i9-ym-LeP"/>
+                            <constraint firstItem="Oe0-lO-tuF" firstAttribute="height" secondItem="oSS-w6-eNJ" secondAttribute="height" id="73j-NL-hpk"/>
+                            <constraint firstItem="wuM-yk-FQn" firstAttribute="height" secondItem="oSS-w6-eNJ" secondAttribute="height" id="8Es-eC-E6N"/>
+                            <constraint firstItem="wuM-yk-FQn" firstAttribute="top" secondItem="FwS-40-dyn" secondAttribute="bottom" constant="20" id="9YS-wX-kDM"/>
+                            <constraint firstItem="oSS-w6-eNJ" firstAttribute="width" secondItem="wuM-yk-FQn" secondAttribute="width" id="CKo-HA-jb5"/>
+                            <constraint firstItem="Oea-Wr-06o" firstAttribute="leading" secondItem="NNA-91-8gm" secondAttribute="trailing" constant="20" id="DJb-fd-72g"/>
+                            <constraint firstItem="FwS-40-dyn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DxV-lE-zQP"/>
+                            <constraint firstItem="oSS-w6-eNJ" firstAttribute="leading" secondItem="Oe0-lO-tuF" secondAttribute="trailing" constant="20" id="Ifd-mm-hSe"/>
+                            <constraint firstItem="Oea-Wr-06o" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="K33-A4-tlQ"/>
+                            <constraint firstItem="FwS-40-dyn" firstAttribute="height" secondItem="Oe0-lO-tuF" secondAttribute="height" id="Tvy-gd-HvC"/>
+                            <constraint firstItem="NNA-91-8gm" firstAttribute="width" secondItem="Oea-Wr-06o" secondAttribute="width" id="UTn-ZM-JNV"/>
+                            <constraint firstItem="Oe0-lO-tuF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Wkz-iQ-h4Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NNA-91-8gm" secondAttribute="bottom" priority="100" constant="20" id="Wyd-oc-vyB"/>
+                            <constraint firstItem="NNA-91-8gm" firstAttribute="top" secondItem="Oe0-lO-tuF" secondAttribute="bottom" constant="20" id="XVO-uC-I3S"/>
+                            <constraint firstItem="Oea-Wr-06o" firstAttribute="top" secondItem="wuM-yk-FQn" secondAttribute="bottom" constant="20" id="a6W-zV-l25"/>
+                            <constraint firstItem="wuM-yk-FQn" firstAttribute="leading" secondItem="oSS-w6-eNJ" secondAttribute="trailing" constant="20" id="aST-nV-Ehz"/>
+                            <constraint firstItem="FwS-40-dyn" firstAttribute="height" secondItem="wuM-yk-FQn" secondAttribute="height" id="aVM-gy-bIE"/>
+                            <constraint firstItem="FwS-40-dyn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="d20-15-Yq0"/>
+                            <constraint firstItem="oSS-w6-eNJ" firstAttribute="height" secondItem="wuM-yk-FQn" secondAttribute="height" id="eA6-LC-vUX"/>
+                            <constraint firstItem="wuM-yk-FQn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fJ4-x1-HfP"/>
+                            <constraint firstItem="oSS-w6-eNJ" firstAttribute="height" secondItem="Oea-Wr-06o" secondAttribute="height" id="h6k-Hp-j0c"/>
+                            <constraint firstItem="FwS-40-dyn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iMb-gd-g1e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Oea-Wr-06o" secondAttribute="bottom" priority="100" constant="20" id="kbJ-H9-Y1f"/>
+                            <constraint firstItem="NNA-91-8gm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t5P-mr-gIJ"/>
+                            <constraint firstItem="Oe0-lO-tuF" firstAttribute="width" secondItem="oSS-w6-eNJ" secondAttribute="width" id="wLJ-z0-4KR"/>
+                            <constraint firstItem="Oe0-lO-tuF" firstAttribute="top" secondItem="FwS-40-dyn" secondAttribute="bottom" constant="20" id="zJM-vo-vu3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="177"/>
+        </scene>
+    </scenes>
+</document>
